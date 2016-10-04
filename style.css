@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(images/background.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.81em;
+	line-height: 150%;
+	color: #FFF;
+}
+
+#container {
+	width: 980px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+/* header structure with horizontal nav */
+#header {
+	position: relative;
+	height: 160px;
+}
+
+#site-logo {
+	position: absolute;
+	top: 5px;
+}
+
+
+#searchform {
+	position: absolute;
+	right: 15px;
+	top: 6px;
+	z-index: 100;
+	width: 200px;
+}
+#searchform #s {
+	width: 180px;
+	float: right;
+	background: #fff;
+	border: none;
+	padding: 6px 10px;
+	/* border radius */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* box shadow */
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	/* transition */
+	-webkit-transition: width .7s;
+	-moz-transition: width .7s;
+	transition: width .7s;
+}
+
+/* main horizontal navigation structure */
+#main-nav {
+	width: 100%;
+	background: #ccc;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	/* gradient */
+	background: #0a3f8d repeat-x;
+}
+#main-nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+#main-nav li:first-child {
+	margin-left: 10px;
+}
+#main-nav a {
+	line-height: 100%;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	padding: 14px 15px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+#main-nav a:hover {
+	color: #fff;
+	background: #6a6a6a;
+	/* gradient */
+	background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+	background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+	background: linear-gradient(-90deg, #282828, #4f4f4f);
+}
+
+#leftbar {
+	float: left;
+	width: 14%;
+	/* gradient */
+	background: #6a6a6a repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6a6a6a), to(#b9b9b9));
+	background: -moz-linear-gradient(top,  #6a6a6a,  #b9b9b9);
+	background: linear-gradient(-90deg, #6a6a6a, #b9b9b9);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a6a6a', endColorstr='#b9b9b9',GradientType=0 ); /* IE6-9 */
+	
+	/* box shadow */
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+
+	padding: 10px;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+
+/* left menu structure */
+ul {
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+	padding-right: 0;
+	padding-top: 0;
+}
+ul.nav {
+	list-style-type: none; /* removes the list marker */
+	border-top: 1px solid #666; /* creates top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* creates space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block;
+	text-decoration: none;
+	background-color: #8090AB;
+	color: #FFF;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* changes background and text color for both mouse and keyboard navigators */
+	background-color: #6F7D94;
+	color: #FFF;
+}
+
+/* main area */
+#main {
+	width: 75%;
+	float: left;
+	padding-left: 0px;
+	color: #333;
+	margin-top: 50px;
+	padding-right: 20px;
+	padding-top: 0px;
+	background-color: #FFFFFF;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#sows {
+	float: left;
+	width: 37%;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+#rtr {
+	float: left;
+	width: 37%;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#sows, #rtr {
+	color: #333;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-right: px;
+}
+
+
+/* footer */
+#footer {
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the #container to understand where the columns end and contain them */
+	width: auto;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #0099FF;
+	color: #333333;
+}

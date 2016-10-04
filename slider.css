@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+		h3 {
+			margin: 0;	
+			padding: 7px 0 0 0;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		div#feature_list {
+	width: 750px;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+    border:5px solid #e4eaf2;
+		}
+
+		div#feature_list ul {
+	position: absolute;
+	top: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 242px;
+		}
+
+		ul#tabs {
+	right: 0;
+	z-index: 2;
+	width: 320px;
+		}
+
+		ul#tabs li {
+			font-size: 12px;
+			font-family: Arial;
+		}
+		
+		ul#tabs li img {
+	padding: 5px;
+	border: none;
+	float: right;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 10px;
+	margin-top: 0px;
+		}
+
+		ul#tabs li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	height: 44px;
+	outline: none;
+	padding-bottom: 8px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 8px;
+	border-color: #E2E2E2;
+		}
+
+		ul#tabs li a:hover {
+			text-decoration: underline;
+		}
+
+		ul#tabs li a.current {
+			background:  url('images/feature-tab-current-01.png');
+			color: #FFF;
+		}
+
+		ul#tabs li a.current:hover {
+			text-decoration: none;
+			cursor: default;
+		}
+
+		ul#output {
+			left: 0;
+			width: 463px;
+			height: 240px;
+			position: relative;
+		}
+
+		ul#output li {
+	position: absolute;
+	width: 463px;
+	height: 240px;
+		}
+
+		ul#output li a {
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFF;
+	background: #000;
+	-moz-border-radius: 5px;
+	left: 10px;
+	width: 193px;
+		}
+		
+		ul#output li a:hover {
+			background: #D33431;
+		}
